@@ -51,12 +51,14 @@ class List extends Component {
         <div style={styles.buttons}>
           <i
             onClick={() => this.props.completeTodo(todo.id, !todo.isComplete)}
+            data-cy-complete
             className="material-icons"
             id="done"
           >
             done
           </i>
           <i
+            data-cy-edit
             onClick={() => this.props.handleEditSelect(todo.id)}
             className="material-icons"
             id="edit"
@@ -64,6 +66,7 @@ class List extends Component {
             edit
           </i>
           <i
+            data-cy-delete
             onClick={() => this.props.deleteTodo(todo.id)}
             id="delete"
             className="material-icons"
