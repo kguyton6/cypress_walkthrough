@@ -1,0 +1,6 @@
+[
+  { "id": 1, "isComplete": false, "title": "Buy Eggs" },
+  { "id": 2, "isComplete": false, "title": "Buy Bread" },
+  { "id": 3, "isComplete": true, "title": "Buy Paper Towels" },
+  { "id": 4, "isComplete": false, "title": "Buy Ham" }
+]
