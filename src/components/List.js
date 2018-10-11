@@ -24,7 +24,7 @@ const styles = {
 class List extends Component {
   render() {
     const list = this.props.todos.map((todo, ind) => (
-      <Card key={ind} className="todos" style={styles.card}>
+      <Card key={ind} data-cy-todos className="todos" style={styles.card}>
         <div style={styles.title}>
           {/* If in edit mode, display input, else just display title */}
           {todo.edit ? (
