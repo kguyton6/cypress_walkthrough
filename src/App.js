@@ -94,7 +94,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header" />
         <form onSubmit={this.handleSubmit}>
-          <TextField
+          <input
             data-cy-input
             type="text"
             name="currentTodo"
@@ -104,11 +104,12 @@ class App extends Component {
             autoFocus
             placeholder="Add new Todo"
           />
-          <RaisedButton data-cy-submit type="submit">
+          <RaisedButton data-cy-submit id='submitBtn'type="submit">
             Submit
           </RaisedButton>
         </form>
         <List
+        className='todos'
           deleteTodo={this.deleteTodo}
           todos={this.state.todos}
           handleEditSelect={this.handleEditSelect}
